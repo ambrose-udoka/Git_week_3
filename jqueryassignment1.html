@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name ='viewport' content = 'width = device-width, initial-scale =1, shrink-to-fit =no'>
+	<title>JQUERY ASSIGNMENT1</title>
+	
+	
+	<link type = 'text/css' href = 'bootstrap.css' rel ='stylesheet'>
+
+
+	<style type ='text/css'>
+
+		div{
+			
+		}
+
+	</style>
+
+</head>
+
+	<body class = 'bg-light'><br><br>
+
+
+<div class = 'container-md'>
+<div class = 'row bg-warning'>
+	
+	<div class ='col-lg'></div>
+	<div class ='col-lg-6'>
+		<label for = 'aws'>AWS Customer Agreement</label><br>
+		<input type ='checkbox' id ='aws'> check here to indicate that yuo have agreed to the terms<br> of the <span class = 'text-primary'>AWS Customer Agreement</span><br><br>
+		<button type = 'button' class = 'btn btn-block btn-success'disabled >Create Account and Continue</button>
+	</div>
+	<div class ='col-lg'></div>
+</div><br><br>
+</div>
+
+<div class = 'container-md'>
+<div class = 'row bg-primary'>
+	<div class ='col-lg'></div>
+	<div class ='col-lg-6'>
+		<label for ='checks'>Where did you hear from us?</label><br>
+		<input type ='checkbox' id ='all'> Select all<br>
+		<input type ='checkbox' class ='fb'> Facebook<br>
+		<input type ='checkbox' class ='fb'> Google Ads<br>
+		<input type ='checkbox' class ='fb'> Newspaper<br>
+		<input type ='checkbox' class ='fb'> Linda Ikeji's Blog<br>
+		<input type ='checkbox' class ='fb'> Moat Academy<br>
+		<input type ='checkbox' class ='fb'> Punch Online<br>
+		<input type ='checkbox' class ='fb'> Others<br>
+
+
+
+	</div>
+	<div class ='col-lg'></div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	<script src ='js/jquery-3.5.1.min.js'></script>
+	<script src ='js/popper.min.js'></script>
+	<script src ='js/bootstrap.js'></script>
+	
+
+	<script type ='text/javascript' language='javascript'>
+
+$(document).ready(function(){
+$('#aws').click(function(){
+	var c = $(this).prop('checked')
+if(c==true){
+	$('.btn').removeAttr('disabled')
+}else{
+	$('.btn').attr('disabled', 'disabled')
+}
+
+})
+
+
+
+$('#all').click(function(){
+	var a = $('#all').prop('checked')
+	if(a==true){
+		$('.fb').prop('checked', 'true')
+	}else{
+$('.fb').prop('checked', 'false')
+}
+
+})
+
+// $('#all').change(function(){
+// 		$('.fb').not(this).prop('checked',this.checked);
+
+// })
+
+})
+	
+
+
+	</script>
+
+
+
+
+	</body>
+
+	</html>

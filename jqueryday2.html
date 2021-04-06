@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name ='viewport' content = 'width = device-width, initial-scale =1, shrink-to-fit =no'>
+	<title>MY PAY FAM PROJECT</title>
+	
+	
+	<link type = 'text/css' href = 'bootstrap.css' rel ='stylesheet'>
+
+
+	<style type ='text/css'>
+
+			div{
+				border:1px solid red;
+				min-height: 50px;
+			}
+
+
+		</style>
+	</head>	
+<body class= 'bg-light'>
+
+<div class="row">
+  
+  <div class = col>
+  
+  <button class = 'btn btn-warning btn-block'></button><br><br>
+
+  <button class = 'btn btn-info' id ='gg'>Like Page</button>
+<input type ='text' name =''>
+</div>
+</div><br><br>
+
+<button class = 'btn btn-success' id ='g'>Like Page</button>
+
+<img src = 'image/close-eyes.png' id ='images' width= '100' height="70"><br><br>
+
+<input type = 'password' name = '' id = 'pwd'>
+<button class = 'btn btn-warning' id ='pd'>Show Password</button><br><br>
+
+
+
+<input type = 'text' name = '' id = 'hotx'><br><br>
+
+
+<button type = 'button'class = 'btn btn-warning' id ='try'>Remove</button>
+
+<img src = 'image/view.png' id ='image' width= '25'><br><br>
+
+
+<script src ='js/jquery-3.5.1.min.js'></script>
+	<script src ='js/popper.min.js'></script>
+	<script src ='js/bootstrap.js'></script>
+
+<!-- $().action() -->
+
+<script type ='text/javascript' language= 'javascript'>
+
+$(document).ready(function(){
+
+
+$('#image').click(function(){
+var s = $('#pwd').attr('type')
+
+if(s=='password'){
+$('#pwd').attr('type','text')
+$('#image').attr('src', 'image/close-eyes.png')
+
+}else{$('#pwd').attr('type', 'password')
+$('#image').attr('src', 'image/view.png')
+
+}
+
+})
+
+
+
+// $('button').click(function(){
+// alert('You just clicked on type button')
+
+// });
+
+// $('#gg').click(function(){
+
+// $('input').change(function(){
+
+// 	alert('hello')
+// })
+
+// To READ/GET from DOM
+
+// $('button').click(function(){
+// var rsp = $('input').val()
+
+// alert(rsp)
+
+// })
+
+
+
+// $('button').click(function(){
+// var rsp = $('input').html()
+
+// alert(rsp)
+
+
+// })
+
+// $('button').click(function(){
+// var rsp = $('button').text()
+
+// alert(rsp)
+
+// })
+
+
+// TO WRITE TO DOM
+
+// $('button').click(function(){
+// $(this).text('Liked')
+
+// })
+
+
+// $('button').click(function(){
+// $(this).html('<img src ="image/view.png" width ="25"> Liked')
+
+// })
+
+// $('#gg').click(function(){
+// var w = $('#images').attr('width')
+
+// var h = $('#images').attr('height')
+// alert('The dimension is  '+ w  +' x '+ h)
+
+// })
+
+// $('#gg').click(function(){
+// $('#images').attr('style', 'border: 5px solid red')
+// $('#images').attr('height', 100)
+
+// })
+
+// $('#gg').click(function(){
+// var w = $('#images').width()
+
+// var h = $('#images').height()
+// alert('The dimension is  '+ w  +' x '+ h)
+
+// })
+
+// $('#gg').click(function(){
+// $('#images').width('300')
+// $('#images').height('250')
+// })
+
+// $('#pd').click(function(){
+// var s = $('#pwd').attr('type')
+
+// if(s=='password'){
+// $('#pwd').attr('type','text')
+
+// }else{$('#pwd').attr('type', 'password')
+
+// }
+
+// })
+
+// $('#hotx').click(function(){
+// $('#hotx').css('border', '2px solid red')
+
+
+// })
+
+// $('#try').click(function(){
+// // $('#images').removeAttr('src')
+
+// $('#images').attr('src','')
+// })
+})
+
+
+
+
+// var rsp = $(selector).text() picks content of tags i.e in place of innerhtml
+
+// var rsp = $(selector).val() picks the value of a tag
+
+// var rsp = $(selector).html() picks contents of everythins in between the opening and closing of tags
+
+
+
+
+
+</script>
+
+
+</body>
+
+
+
+
+</html>	

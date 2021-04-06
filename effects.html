@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Effects / Animations and Other DOM Manipulation Functions</title>
+	<link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+
+	 
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10" id='box'>
+<button class="btn btn-success btn-lg" id='add'>Add More</button><br>
+	 <label>Address Line 1</label>
+	 <input type="text" class="form-control" name="">
+	 <label>Address Line 2</label>
+	 <input type="text" class="form-control" name=""> 
+
+	 			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#" class="link">Remove </a>
+			</div>
+		</div> 
+	</div>
+
+
+<script src ='js/jquery-3.5.1.min.js'></script>
+	<script src ='js/popper.min.js'></script>
+	<script src ='js/bootstrap.js'></script>
+
+	
+<script src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var counter =  3;
+	$('#add').click(function(){
+		var myid = 'addressline' + counter
+		$('#box').append('<div id="'+myid+'"><label>Address Line' + counter + ' </label><input type="text" class="form-control" name=""></div>')
+		counter = counter + 1
+	})
+
+	$('.link').click(function(){
+		var id = '#addressline'+ counter
+		$(id).remove() //$('#addressline10')
+		counter = counter - 1;
+	})
+})
+ 
+
+</script>
+</body>
+</html>

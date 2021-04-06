@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+<meta name ='viewport' content = 'width = device-width, initial-scale =1, shrink-to-fit =no'>
+	<title>Jquery day 4</title>
+	
+	
+	<link type = 'text/css' href = 'bootstrap.css' rel ='stylesheet'>
+	<link type = 'text/css' href = 'animate.css' rel ='stylesheet'>
+
+
+	<style type ='text/css'>
+
+		div{
+			
+		}
+
+	</style>
+</head>
+<body>
+
+<div class = 'container'>
+	
+	<div class ='row'>
+		
+		<div class ='col-lg'><br><br>
+			<p id ='sly' style ='display: none'>This is a slide down</p>
+			<img src ='image/lady6.jpg' style= 'display: none' id ='image'>
+			<textarea name="" id ='txt'class = 'btn-block form-control' >
+			What did they say?
+			come let's talk</textarea>
+			<button class = 'btn btn-success btn-block' id ='hid'>Hide</button>
+
+		</div>
+	</div><br>
+
+	<div id ='newuser' class ='form-control' style ='border: 1px solid red; height: 250px; width: 200px; display: none'>New User</div>
+
+	<div id ='existuser' class ='form-control' style ='border: 5px solid blue; height: 250px; width: 200px; display: none'>Existing User</div><br>
+
+<input type="radio" name="reg" id ='user'>New user? Register here<br>
+<input type="radio" name="reg" id ='login'>Existing user? Login here
+
+</div>
+
+<script src ='js/jquery-3.5.1.min.js'></script>
+	<script src ='js/popper.min.js'></script>
+	<script src ='js/bootstrap.js'></script>
+	
+<script type ='text/javascript' language='javascript'>
+
+$(document).ready(function(){
+// $('#hid').click(function(){
+// 	// $('#txt').hide()
+// 	// $('#txt').hide(1000)
+// 	// $('#txt').hide(1000,function(){
+// 	// 	alert('it has gone')
+// 	// })
+// 	$('#txt').hide(1000,function(){
+// 		// $('#image').show(1000)
+// 		// $('#image').fadeTo(1000,0.8)
+// 		// $('#image').fadeToggle(1000)
+// 		$('#image').fadeIn(1000)
+// 		$('#sly').slideDown(1000)
+		
+
+// 	})
+// })
+$('#user').click(function(){
+	$('#existuser').hide()
+	$('#newuser').show()
+	
+})
+
+$('#login').click(function(){
+	$('#newuser').hide()
+	$('#existuser').show()
+	
+})
+})
+</script>
+
+
+</body>
+</html>
